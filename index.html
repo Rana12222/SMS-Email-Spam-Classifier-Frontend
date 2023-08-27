@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/koderss-low-resolution-logo-white-on-transparent-background.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>                
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#about-section">ABOUT</a></li>
+                    <li><a href="#contactus-section">CONTACT US</a></li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+            
+
+
+        </nav>
+        <div class="text-box">
+            <h1>SMS & Email Spam Classifier</h1>
+            
+            <a href="SMS_Email_Spam_Classifier_Data_Analysis.html" class="hero-btn" target="_blank">View Data Analysis  </a>
+            <a href="https://sms-email-spam-classifier-project.streamlit.app/" class="heroo-btn" target="_blank">SMS & Email Spam Predictor</a>
+            
+        </div>
+        
+    </section>
+
+    <section class="course">
+        <h1></h1>
+
+    </section>
+
+   
+
+
+<!-- -------about-------- -->
+
+    <section class="about" id="about-section">
+        
+        <h1>About The Project</h1>
+        <p>A SMS and Email spam classifier in data science is a machine learning model designed to distinguish between legitimate messages and unsolicited spam messages in SMS texts and Emails. By analyzing  text content and other contextual cues, the classifier classifes each message  as spam or not spam. Through the training process, the model learns patterns and characteristics of spam, enabling it to accurately classify incoming messages as spam or not spam. This technology enhances user experience by reducing the intrusion of unwanted content and streamlining communication.
+ </p>
+        <div class="row">
+            <div class="about-col">
+               <img src="images/spam.jpg" alt=""> 
+               <div class="layer">
+                <h3>Automated Spam Detection</h3>
+                <p> A SMS and email spam classifier employs advanced machine learning techniques to identify and classify unsolicited spam messages. By analyzing message content ,contextual cues, the model learns to recognize patterns and features that distinguish spam from legitimate messages.</p>
+               </div>
+            </div>
+            <div class="about-col">
+                <img src="images/feature.webp" alt=""> 
+                <div class="layer">
+                 <h3>Feature-Based Classification</h3>
+                 <p> The classifier utilizes a range of features extracted from the messages, including keywords and language patterns. These features are used to train the model, enabling it to make accurate predictions about whether a given message is spam or not. </p>
+                </div>
+             </div>
+             <div class="about-col">
+                <img src="images/userexp.jpg" alt=""> 
+                <div class="layer">
+                 <h3>Enhanced User Experience</h3>
+                 <p>Implementing a SMS and email spam classifier enhances the user experience by filtering out unwanted content and minimizing the disruption caused by spam messages. Users can focus on genuine communication without the interference of irrelevant or potentially harmful messages. This technology is crucial in maintaining the efficiency and security of communication channels in an increasingly digital world.</p>
+                </div>
+             </div>
+        </div>
+
+    </section>
+
+<!-- ----- CONTACT US ------ -->
+
+<section class="contactus" id="contactus-section">
+    <h2>CONTACT US</h2>
+    <p>Know About The Contributors</p>
+    <h1> Institution: Dr. Akhilesh Das Gupta Institute of Technology and Management</h1>
+    <img src="images/adgitm.webp" alt="">
+    <div class="row">
+        <div class="contact-us">
+            <!-- <img src="images/contact.png" alt=""> -->
+            <div class="contact">
+                <h3>Saksham Jain</h3>
+                <p>Enroll No: 11215603121</p>
+                <p>Branch   : Information Technology</p>
+                <p> --------------------------------------------------------------------------------------------------------------------------------------</p>
+
+
+            </div>
+        </div>
+        <div class="contact-us">
+            <!-- <img src="images/contact.png" alt=""> -->
+            <div class="contact">
+                <h3>Shubham Tyagi</h3>
+                <p>Enroll No: 01515603121</p>
+                <p>Branch   : Information Technology</p>
+                <p> --------------------------------------------------------------------------------------------------------------------------------------</p>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ---- Java Script for toggle menu ---- -->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+
+    </script>
+
+
+
+<!-- -------------script for about------------  -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+function showMenu() {
+    navLinks.style.right = "0";
+}
+
+function hideMenu() {
+    navLinks.style.right = "-200px";
+}
+
+// Smooth scroll functionality
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
+
+
+<!-- --------script for contact us--------- -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+
+    // Smooth scroll functionality
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+
+</body>
+</html>
